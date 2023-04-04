@@ -1,0 +1,19 @@
+# Ignore Jupyter Notebook checkpoints and output
+.ipynb_checkpoints/
+*.ipynb_output/
+
+# Ignore virtual environment files
+venv/
+env/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Jupyter Notebook metadata
+*.ipynb_metadata
+*.json

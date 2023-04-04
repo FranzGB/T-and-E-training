@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "t-and-e-training"
+version = "0.1.0"
+description = "A training for tiers and expectations"
+authors = ["Franz Guzmán <fguzman@stackbuilders.com>"]
+readme = "README.md"
+packages = [{include = "t_and_e_training"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flake8 = "^6.0.0"
+black = "^23.3.0"
+jupyter = "^1.0.0"
+jupyterlab = "^3.6.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
