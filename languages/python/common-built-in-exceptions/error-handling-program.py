@@ -40,7 +40,7 @@ try:
     num = input("Give me a number: ")
     print(f"Two divided by {num} is {2 / num}.")
 except TypeError:
-    print(f"Uh?1 Looks like I can't divide {num}. What are you doing?!")
+    print(f"Uh? Looks like I can't divide {num}. What are you doing?!")
 
 # IndexError example
 num1 = float(input("Enter the first number: "))
