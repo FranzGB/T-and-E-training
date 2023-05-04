@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Pseudo-classes Example</title>
+  <style>
+    /* Set initial styles for the box */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      margin: 50px auto;
+      transition: transform 1s;
+    }
+
+    /* Apply different styles when the box is hovered over */
+    .box:hover {
+      background-color: blue;
+      transform: rotate(50deg);
+    }
+
+    /* Apply different styles when the box is clicked */
+    .box:active {
+      background-color: green;
+      transform: scale(1.5);
+    }
+
+
+    /* Apply different styles when the checkbox is checked */
+    input[type="checkbox"]:checked {
+      transform: translateX(200px);
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>CSS Pseudo-classes Example</h1>
+
+  <!-- Add a checkbox to trigger the :checked pseudo-class -->
+  <label>
+    <input type="checkbox" /> Move checkbox right
+  </label>
+
+  <!-- Add a box to apply the pseudo-classes to -->
+  <div class="box">
+  </div>
+</body>
+
+</html>
