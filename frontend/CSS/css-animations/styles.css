@@ -1,0 +1,110 @@
+div {
+  border: 1px solid black;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+/* Example 1: Fade-in effect */
+.fade-in {
+  opacity: 0;
+  animation: fade-in 3s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Example 2: Spin animation */
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Example 3: Keyframe animation */
+.bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Example 4: Hover effects */
+.hover-effect {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  background-color: lightblue;
+  transform: scale(1.5);
+}
+
+/* Example 5: Slideshow carousel */
+.slideshow {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slideshow 5s linear infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  53% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
